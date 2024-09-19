@@ -12,13 +12,13 @@ deployment:
 
     # Step 2: Change directory to the deployment directory (APP_PATH)
     - 'echo "Changing to app directory..."'
-    - "cd ${APP_PATH}"
+    - cd ${APP_PATH}
 
     # Step 3: Install all dependencies for both frontend and backend
     - 'echo "Installing dependencies..."'
-    - "cd ${APP_PATH} && npm install"
+    - cd ${APP_PATH} && npm install
 
     # Step 4: Run the Node.js backend (server.js) in the background
     - 'echo "Starting backend server with node server.js..."'
-    - "/opt/cpanel/ea-nodejs16/bin/node ${APP_PATH}/server.js &"
+    - /opt/cpanel/ea-nodejs16/bin/node ${APP_PATH}/server.js &
     - 'echo "Backend server started!"'

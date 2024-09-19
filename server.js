@@ -11,7 +11,8 @@ sgMail.setApiKey(process.env.SENDGRID_API_KEY);
 app.use(cors());
 app.use(
   cors({
-    origin: "https://react-contact-template.vercel.app", // Allow requests from your frontend
+    // origin: "https://react-contact-template.vercel.app", // Allow requests from your frontend
+    origin: "https://react.mcurrier.com",
     methods: ["POST"],
     allowedHeaders: ["Content-Type"],
   })

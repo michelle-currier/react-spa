@@ -8,8 +8,9 @@ const PORT = process.env.PORT || 5002;
 
 sgMail.setApiKey(process.env.SENDGRID_API_KEY);
 
-app.use(cors());
+// app.use(cors());
 app.use(
+  // for the remote deploy
   cors({
     // origin: "https://react-contact-template.vercel.app", // Allow requests from your frontend
     origin: "https://react.mcurrier.com",

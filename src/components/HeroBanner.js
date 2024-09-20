@@ -18,6 +18,7 @@ const HeroBanner = () => (
   >
     <Container>
       <Typography variant="h2">Welcome to Our Website</Typography>
+      <Typography variant="h1">React.mcurrier.com</Typography>
       <Typography variant="h5">Your success is our priority</Typography>
     </Container>
   </Box>
